@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Sky Guide</title>
+    <!--CSS CODE-->
+    <style type="text/css" media="screen">
+        /* BASIC TYPOGRAPHY */
+        html {
+            font-family: serif;
+        }
+        ::-webkit-scrollbar {
+            width: 0px;  /* Remove scrollbar space */
+            background: transparent;  /* Optional: just make scrollbar invisible */
+        }
+        body {
+            line-height: 0.75;
+            color: black;
+            background-color: black;
+            max-width: inherit;
+            margin: 0;
+        }
+        h1, h2, h3{
+            font-family: verdana;
+            font-weight: 700;
+            text-indent: 5px;            
+        }
+        h1 {
+            margin: 0;
+            line-height: 1;
+            padding: 10px;
+            text-align: center;
+        }
+        h2 {
+            margin: 0;
+            line-height: 1.1;
+            text-indent: 5px;
+        }
+        h3 {
+            line-height: 0;
+            text-indent: 10px;
+        }
+        ul {
+            margin: 25px;
+            text-indent: 0px;
+            padding: 10px;
+            list-style: none; /* Remove default bullets */
+        }
+        ul li::before {
+            content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+            color: black; /* Change the color */
+            font-weight: bold; /* If you want it to be bold */
+            display: inline-block; /* Needed to add space between the bullet and the text */ 
+            width: 1em; /* Also needed for space (tweak if needed) */
+            margin-left: -1em; /* Also needed for space (tweak if needed) */
+        }
+        li {
+            line-height: 1;
+            font-size: 24px;
+        }
+        div {
+            text-indent: 0px;
+        }
+        main {
+            margin: 0 auto;
+            max-width: 100%;
+            line-height: 1.5;
+            font-size: 20px;
+            color:black;
+            text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+
+            background-color:black;
+            background-image:url('pics/background0.jpg');
+            background-repeat:no-repeat;
+            background-position:center;
+            background-size:100% 100%;
+            background-attachment: fixed;
+        }
+        .ha{
+            text-align:center;
+        }
+        /* Use a media query to add a breakpoint at 800px: */
+        @media screen and (max-width: 1200px) {
+            main {font-size: 20px;}
+            main{background-image:url('pics/background.jpg');}
+        }
+        @media screen and (max-width: 800px) {
+            main {font-size: 18px;}
+            li {font-size: 22px;}
+            main{background-image:url('pics/background.jpg');}
+        }
+        @media screen and (max-width: 600px) {
+            main {font-size: 16px;}
+            li {font-size: 20px;}
+            main{background-image:url('pics/background.jpg');}
+        }
+    </style>
+
+
+
+<body>
+    
+    <main>
+    <h1>My Sky Guide</h1>
+    <h1>-JD-</h1>
+        <h2 class="ha">Select Owner: <a href="Zoot.html">Zoot</a></h2>
+        <BR>
+        <h2>System</h2>
+            <h3>Planet</h3>
+            <h3>Base Name</h3>
+                <ul>
+                    <li>Romer</li>
+                    <li>Plants</li>
+                </ul>
+        <h2>Linglonib</h2>
+            <h3>Atra VIII</h3>
+                <ul>
+                    <li>TBD</li>
+                    <li>Fungal Mould</li>
+                </ul> 
+        <h2>System</h2>
+            <h3>Base Name</h3>
+                <ul>
+                    <li>Romer</li>
+                    <li>Plants</li>
+                </ul>
+        <h2>System</h2>
+            <h3>Planet</h3>
+            <h3>Base Name</h3>
+                <ul>
+                    <li>Romer</li>
+                    <li>Plants</li>
+                </ul>
+        <h2>System</h2>
+            <h3>Planet</h3>
+            <h3>Base Name</h3>
+                <ul>
+                    <li>Romer</li>
+                    <li>Plants</li>
+                </ul>
+        <h2>System</h2>
+            <h3>Planet</h3>
+            <h3>Base Name</h3>
+                <ul>
+                    <li>Romer</li>
+                    <li>Plants</li>
+                </ul>
+    </main>
+ 
+</body>
+</html>
