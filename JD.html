@@ -9,19 +9,21 @@
     <!--CSS CODE-->
     <style type="text/css" media="screen">
         /* BASIC TYPOGRAPHY */
-        html, body {
+        html {
             font-family: serif;
             
+        }
+        ::-webkit-scrollbar {
+            width: 0px;  /* Remove scrollbar space */
+            background: transparent;  /* Optional: just make scrollbar invisible */
+        }
+        body {
             line-height: 0.75;
             color: black;
             background-color: black;
             max-width: inherit;
             margin: 0;
-        }
-
-        ::-webkit-scrollbar {
-            width: 0px;  /* Remove scrollbar space */
-            background: transparent;  /* Optional: just make scrollbar invisible */
+            
         }
         h1, h2, h3{
             font-family: verdana;
@@ -67,21 +69,18 @@
         main {
             margin: 0 auto;
             max-width: 100%;
-            max-height: 100%;
             line-height: 1.5;
             font-size: 20px;
             color:black;
             text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+
+            background-color:black;
             background-image:url('pics/background0.jpg');
             background-repeat:no-repeat;
             background-position:center;
+            background-size:100% 100%;
             background-attachment: fixed;
-            background-size: 100vw 100vh;
-            height: 100%;
-           
-          
-            
-           
+            height:fit-content;
         }
         .ha{
             text-align:center;
@@ -119,8 +118,13 @@
                     <li>Romer</li>
                     <li>Plants</li>
                 </ul>
+        <h2>Linglonib</h2>
+            <h3>Atra VIII</h3>
+                <ul>
+                    <li>TBD</li>
+                    <li>Fungal Mould</li>
+                </ul> 
         <h2>System</h2>
-            <h3>Planet</h3>
             <h3>Base Name</h3>
                 <ul>
                     <li>Romer</li>
