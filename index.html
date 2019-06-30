@@ -11,6 +11,8 @@
         /* BASIC TYPOGRAPHY */
         html {
             font-family: serif;
+            height: 100%;
+            margin: 0;
         }
         body {
             line-height: 0.75;
@@ -18,11 +20,13 @@
             background-color: black;
             max-width: inherit;
             margin: 0;
+            height: 100%;
         }
-        h1, h2, h3 {
+        h1, h2, h3{
             font-family: verdana;
             font-weight: 700;
-            text-indent: 5px;            
+            text-indent: 5px; 
+            margin: 0;           
         }
         h1 {
             margin: 0;
@@ -35,35 +39,6 @@
             line-height: 1.1;
             text-indent: 5px;
         }
-        h3 {
-            line-height: 0;
-            text-indent: 10px;
-        }
-        ul {
-            margin: 25px;
-            text-indent: 0px;
-            padding: 10px;
-            list-style: none; /* Remove default bullets */
-        }
-        ul li::before {
-            content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-            color: black; /* Change the color */
-            font-weight: bold; /* If you want it to be bold */
-            display: inline-block; /* Needed to add space between the bullet and the text */ 
-            width: 1em; /* Also needed for space (tweak if needed) */
-            margin-left: -1em; /* Also needed for space (tweak if needed) */
-        }
-        li {
-            line-height: 1;
-            font-size: 24px;
-           
-        }
-        div {
-            text-indent: 0px;
-        }
-        header {
-            overflow: auto;
-        }
         main {
             margin: 0 auto;
             max-width: 100%;
@@ -71,14 +46,17 @@
             font-size: 20px;
             color:black;
             text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
-
+            
             background-color:black;
             background-image:url('pics/background0.jpg');
             background-repeat:no-repeat;
             background-position:center;
             background-size:100% 100%;
             background-attachment: fixed;
-         
+            height: 100%;
+        }
+        .ha{
+            text-align:center;
         }
         /* Use a media query to add a breakpoint at 800px: */
         @media screen and (max-width: 1200px) {
@@ -102,49 +80,14 @@
 <body>
     
     <main>
-        <h1>My Sky Guide</h1>
+    <h1>My Sky Guide</h1>
+    <h1>-Index-</h1>
         <BR>
-        <h2>System</h2>
-            <h3>Planet</h3>
-            <h3>Base Name</h3>
-                <ul>
-                    <li>Romer</li>
-                    <li>Plants</li>
-                </ul>
-        <h2>Linglonib</h2>
-            <h3>Atra VIII</h3>
-                <ul>
-                    <li>TBD</li>
-                    <li>Fungal Mould</li>
-                </ul> 
-        <h2>System</h2>
-            <h3>Planet</h3>
-            <h3>Base Name</h3>
-                <ul>
-                    <li>Romer</li>
-                    <li>Plants</li>
-                </ul>
-        <h2>System</h2>
-            <h3>Planet</h3>
-            <h3>Base Name</h3>
-                <ul>
-                    <li>Romer</li>
-                    <li>Plants</li>
-                </ul>
-        <h2>System</h2>
-            <h3>Planet</h3>
-            <h3>Base Name</h3>
-                <ul>
-                    <li>Romer</li>
-                    <li>Plants</li>
-                </ul>
-        <h2>System</h2>
-            <h3>Planet</h3>
-            <h3>Base Name</h3>
-                <ul>
-                    <li>Romer</li>
-                    <li>Plants</li>
-                </ul>
+            <BR>
+        <h2 class="ha">Select Owner: <a href="JD.html">JD</a></h2>
+        <BR>
+        <h2 class="ha">Select Owner: <a href="Zoot.html">Zoot</a></h2>
+        <BR>
     </main>
  
 </body>
