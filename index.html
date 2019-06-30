@@ -73,25 +73,28 @@
             text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
 
             background-color:black;
-            background-image:url('pics/background.jpg');
+            background-image:url('pics/background0.jpg');
             background-repeat:no-repeat;
             background-position:center;
             background-size:100% 100%;
             background-attachment: fixed;
          
         }
+        /* Use a media query to add a breakpoint at 800px: */
         @media screen and (max-width: 1200px) {
             main {font-size: 20px;}
+            main{background-image:url('pics/background.jpg');}
         }
         @media screen and (max-width: 800px) {
             main {font-size: 18px;}
             li {font-size: 22px;}
+            main{background-image:url('pics/background.jpg');}
         }
         @media screen and (max-width: 600px) {
             main {font-size: 16px;}
             li {font-size: 20px;}
+            main{background-image:url('pics/background.jpg');}
         }
-        /* Use a media query to add a breakpoint at 800px: */
     </style>
 
 
