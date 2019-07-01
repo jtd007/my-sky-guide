@@ -19,6 +19,7 @@
             max-width: inherit;
             margin: 0px;
             padding: 0 20px;
+            background-image: url("pics/jd.jpg");
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-size: 100% 100%;
@@ -61,10 +62,6 @@
             line-height: 1.5;
             font-size: 20px;
         }
-        /* Style the video: 100% width and height to cover the entire window */
-        #myVideo {
-            
-        }
         /* Add some content at the bottom of the video/page */
         .content {
         position:relative; /* "relative" resized content. if scrollbar is needed use "fixed" */
@@ -76,25 +73,25 @@
         #demo {text-align: center;}
 
         @media screen and (max-width: 1200px) {
-            main {
+            main, body {
                 font-size: 20px;
                 color: yellow;
-                background-size: 960px 540px;
+                background-size: 960px 100%;
                 }
         }
         @media screen and (max-width: 800px) {
-            main {
+            main, body {
                 font-size: 18px;
                 color: blue;
-                background-size: 960px 540px;
+                background-size: 960px 100%;
                 }
             li {font-size: 22px;}
         }
         @media screen and (max-width: 600px) {
-            main {
+            main,body {
                 font-size: 16px;
                 color: red;
-                background-size: 100%;
+                background-size: 960px 100%;
                 }
             li {font-size: 20px;}
         }
@@ -103,7 +100,7 @@
 </head>
 
 
-<body id="myVideo" background="pics/jd.jpg">
+<body">
     <header></header>
 
     <main>
