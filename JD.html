@@ -5,106 +5,113 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hiking</title>
+<title>My Sky Guide</title>
     <!--CSS CODE-->
     <style type="text/css" media="screen">
         /* BASIC TYPOGRAPHY */
         html {
             font-family: serif;
+           
+            
+        }
+        ::-webkit-scrollbar {
+            width: 0px;  /* Remove scrollbar space */
+            background: transparent;  /* Optional: just make scrollbar invisible */
         }
         body {
             line-height: 0.75;
             color: black;
-            background-color: #f9f9f9;
+            background-color: black;
             max-width: inherit;
-            margin: 0px;
-            padding: 0 20px;
-            background-image: url("pics/jd.jpg");
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
+            margin: 0;
+           
             
         }
-        h1, h2, h3 {
+        h1, h2, h3{
             font-family: verdana;
             font-weight: 700;
+            text-indent: 5px;            
         }
         h1 {
+            margin: 0;
             line-height: 1;
+            padding: 10px;
+            text-align: center;
         }
         h2 {
+            margin: 0;
             line-height: 1.1;
-            text-indent: 0px;
+            text-indent: 5px;
         }
-        h4 {
-            text-align: center;
+        h3 {
             line-height: 0;
-            font-weight: 300;
+            text-indent: 10px;
         }
         ul {
             margin: 25px;
             text-indent: 0px;
-            padding: 0em;
+            padding: 10px;
+            list-style: none; /* Remove default bullets */
+        }
+        ul li::before {
+            content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+            color: black; /* Change the color */
+            font-weight: bold; /* If you want it to be bold */
+            display: inline-block; /* Needed to add space between the bullet and the text */ 
+            width: 1em; /* Also needed for space (tweak if needed) */
+            margin-left: -1em; /* Also needed for space (tweak if needed) */
         }
         li {
-            line-height: 1.5;
+            line-height: 1;
             font-size: 24px;
         }
         div {
             text-indent: 0px;
         }
-        header, footer {
-            margin: 20px; /* extra space around main */
-        }
         main {
-            width: 66em;
-            margin: 0 auto; /* centers main */
+            margin: 0 auto;
             max-width: 100%;
             line-height: 1.5;
             font-size: 20px;
-        }
-        /* Add some content at the bottom of the video/page */
-        .content {
-        position:relative; /* "relative" resized content. if scrollbar is needed use "fixed" */
-        background: rgba(0, 0, 0, 0.5);
-        color: #f1f1f1;
-        width: auto;
-        padding: 20px;
-        }
-        #demo {text-align: center;}
+            color:black;
+            text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
 
-        @media screen and (max-width: 1200px) {
-            main, body {
-                font-size: 20px;
-                color: yellow;
-          
-                }
+            background-color:black;
+            background-image:url('pics/jd.jpg');
+            background-repeat:no-repeat;
+            background-position:center;
+            background-size:100% 100%;
+            background-attachment: fixed;
+            height:100%;
+            
         }
-        @media screen and (max-width: 800px) {
-            main, body {
-                font-size: 18px;
-                color: blue;
-        
-                }
-            li {font-size: 22px;}
+        .ha{
+            text-align:center;
         }
-        @media screen and (max-width: 600px) {
-            main,body {
-                font-size: 16px;
-                color: white;
-       
-                }
-            li {font-size: 20px;}
+        a{
+            color:darkred;
         }
         /* Use a media query to add a breakpoint at 800px: */
+        @media screen and (max-width: 1200px) {
+            main {font-size: 20px;}
+            main{background-image:url('pics/jd.jpg');}
+        }
+        @media screen and (max-width: 800px) {
+            main {font-size: 18px;}
+            li {font-size: 22px;}
+            main{background-image:url('pics/jd.jpg');}
+        }
+        @media screen and (max-width: 600px) {
+            main {font-size: 16px;}
+            li {font-size: 20px;}
+            main{background-image:url('pics/jd.jpg');}
+        }
     </style>
-</head>
 
 
-<body">
-    <header></header>
 
+<body>
+    
     <main>
         <h1>My Sky Guide</h1>
         <h1>-JD-</h1>
@@ -150,7 +157,7 @@
                         <li>Romer</li>
                         <li>Plants</li>
                     </ul>
-    </main>
-    <footer></footer>
+        </main>
+ 
 </body>
 </html>
